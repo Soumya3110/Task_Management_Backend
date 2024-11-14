@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import RegisterAndLogin from './Pages/RegisterAndLogin';
+import { TaskProvider } from './Components/Context/task_context';
+import TaskDashboard from './Pages/TaskDashboard';
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TaskProvider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<RegisterAndLogin />} />
+        <Route path="/taskdashboard" element={<TaskDashboard/>} />
+        
+     
+      </Routes>
+    </Router>
+    </TaskProvider>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,43 @@
+/* RegisterAndLogin.css */
+.register-login-container {
+    display: flex;
+    align-items: center;
+   height: 100vh;
+   width: 100vw;
+  }
+  
+  .side-image {
+    background-color:  #17A2B8;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+    width: 60%;
+  }
+  .side-image img{
+    position: relative;
+    height: 200px;
+   width: 200px;
+  }
+  .side-image .circle{
+    position: absolute;
+    background-color: #317F8B;
+   height: 210px;
+   width: 210px;
+   border-radius: 50%;
+   margin-top: -140px;
+  }
+.side-image p{
+  margin-top: 5px;
+  color: white;
+}
+
+.form-section{
+  width: 40%;
+}
+  
+  

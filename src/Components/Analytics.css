@@ -1,0 +1,17 @@
+.analytics-container {
+    padding: 20px;
+    background-color: #ffffff;
+    height: 100%;
+  }
+  
+  .analytics-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .analytics-container p {
+    font-size: 16px;
+    color: #666;
+  }
+  
